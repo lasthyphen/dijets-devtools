@@ -1,0 +1,22 @@
+[package]
+name = "datatest-stable"
+version = "0.1.1"
+authors = ["Dijets Association <opensource@dijets.com>"]
+description = "Data-driven tests that work on stable Rust"
+repository = "https://github.com/lasthyphen/dijets-devtools"
+license = "MIT OR Apache-2.0"
+publish = ["crates-io"]
+readme = "README.md"
+edition = "2018"
+categories = ["development-tools::testing"]
+keywords = ["datatest", "data-driven-tests", "test-harness"]
+
+[dependencies]
+regex = "1.5.4"
+walkdir = "2.3.1"
+structopt = "0.3.21"
+termcolor = "1.1.2"
+
+[[test]]
+name = "example"
+harness = false
